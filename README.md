@@ -44,16 +44,65 @@ You can view the GUI (Ubuntu Desktop) on a monitor connected through the HDMI po
 * Username: **ubuntu**
 * Password: **ubuntu**
 
-
-  
+```
+sudo apt install net-tools
+```
 
 >* SSH
+>  
+>Use the Ubuntu username and password, and for the Remote host (IP address), find it using the `ifconfig` command in the terminal (either through the GUI or Serial Terminal) on the KV260. Make sure to set the port to 22.
 >
+>*To transfer files in `/root/jupyter_notebook/` using MobaXterm, you will need root SSH access permissions*
+>
+>```
+>sudo passwd root # make root password
+>sudo vim /etc/ssh/sshd_config
+>```
+> * PermitRootLogin yes
+>   
+> * PasswordAuthentication yes
+>   
+> * ChallengeResponseAuthentication no
+>
+>```
+>service sshd reload
+>```
 
 ```
-public class BootSpringBootApplication {
-  public static void main(String[] args) {
-    System.out.println("Hello, Honeymon");
-  }
-}
+sudo dpkg-reconfigure -plow unattended-upgrades
 ```
+--`NO`
+```
+sudo apt-get install git
+sudo apt update
+sudo apt -f install
+sudo apt full-upgrade
+sudo snap install xlnx-config --classic --channel=2.x
+sudo xlnx-config.sysinit
+```
+### ** !Do not upgrade the Ubuntu version! **
+
+![ubuntu upgrade](./ubuntu_upgrade.png)
+
+### --keep the local version currently installed
+
+## Install PYNQ
+
+```
+git clone https://github.com/Xilinx/Kria-PYNQ.git
+cd Kria-PYNQ
+sudo bash install.sh -b KV260
+sudo apt autoremove
+sudo reboot
+```
+```
+sudo /usr/local/share/pynq-venv/bin/python3 -m pip install --upgrade pip
+sudo /usr/local/share/pynq-venv/bin/python3 -m pip install torch torchvision pillow opencv-python
+sudo /usr/local/share/pynq-venv/bin/python3 -m pip install --upgrade jupyter
+```
+
+## Open Jupyter notebooks
+
+Open Chrome on a PC that is on the **Local Area Network** as the Kria and type this in the address bar:`kria:9090`
+
+* Password: **xilinx**
