@@ -146,9 +146,9 @@ There are some issues downloading the MNIST dataset due to server problems. Plea
 
 [Xilinx Wiki/Boards and Kits/Kria SOMs & Starter Kits](https://xilinx-wiki.atlassian.net/wiki/x/AQDSYQ)
 
-[Kria-PYNQ](https://github.com/Xilinx/Kria-PYNQ)
+[Kria-PYNQ github](https://github.com/Xilinx/Kria-PYNQ)
 
-[PYNQ](https://github.com/Xilinx/PYNQ/)
+[PYNQ github](https://github.com/Xilinx/PYNQ/)
 
 [PYNQ: Python productivity for Adaptive Computing platforms](https://pynq.readthedocs.io/en/latest/index.html)
 
