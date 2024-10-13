@@ -1,6 +1,8 @@
 # pynq_kv260
 ![](./kriapynq.png)
 
+
+
 ## Ubuntu Desktop LTS
 
 ![Xilinx Ubuntu](./Ubuntu_Desktop_LTS.png)
@@ -18,6 +20,8 @@ The Ubuntu Desktop 22.04 is the primary OS targeted by the KV260 pre-built appli
 >
 >[Rufus](https://github.com/pbatard/rufus)
 >When you need helps format and create bootable USB flash drives.
+
+
 
 ## System Update
 
@@ -80,11 +84,14 @@ sudo apt full-upgrade
 sudo snap install xlnx-config --classic --channel=2.x
 sudo xlnx-config.sysinit
 ```
+
 ### ** !Do not upgrade the Ubuntu version! **
 
 ![ubuntu upgrade](./ubuntu_upgrade.png)
 
 ### --keep the local version currently installed
+
+
 
 ## Install PYNQ
 
@@ -101,14 +108,25 @@ sudo /usr/local/share/pynq-venv/bin/python3 -m pip install torch torchvision pil
 sudo /usr/local/share/pynq-venv/bin/python3 -m pip install --upgrade jupyter
 ```
 
+
+
+## Test PYNQ
+```
+sudo ./selftest.sh #/path-Kria-PYNQ/ sudo ./home/ubuntu/Kria-PYNQ/selftest.sh
+```
+
+
+
 ## Open Jupyter notebooks
 
-Open Chrome on a PC that is on the **Local Area Network** as the Kria and type this in the address bar:`kria:9090`
+Open Chrome on a PC that is on the **Local Area Network** as the Kria and type this in the address bar:`kria:9090/lab`
 
 * Password: **xilinx**
 
-## Open Jupyter notebooks
 
+
+## OpenCV Face Detection Webcam.ipynb
+`/kv260/video/OpenCV Face Detection Webcam.ipynb`
 
 
 * * *
