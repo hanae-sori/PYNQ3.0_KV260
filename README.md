@@ -136,7 +136,7 @@ Open Chrome on a PC that is on the **Local Area Network** as the Kria and type t
 > 
 > HTTPError: HTTP Error 403: Forbidden
 
-I am having issues downloading the MNIST dataset due to server problems. Please use the new ipynb project that I have uploaded.
+There are some issues downloading the MNIST dataset due to server problems. Please use the ipynb project that have uploaded.
 
 
 * * *
