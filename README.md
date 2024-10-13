@@ -150,5 +150,7 @@ There are some issues downloading the MNIST dataset due to server problems. Plea
 
 [PYNQ](https://github.com/Xilinx/PYNQ/)
 
+[PYNQ: Python productivity for Adaptive Computing platforms](https://pynq.readthedocs.io/en/latest/index.html)
+
 * * *
 * * *
