@@ -63,11 +63,6 @@ sudo apt install net-tools
 >sudo vim /etc/ssh/sshd_config
 >```
 > * PermitRootLogin yes
->   
-> * PasswordAuthentication yes
->   
-> * ChallengeResponseAuthentication no
->
 >```
 >service sshd reload
 >```
