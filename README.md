@@ -114,5 +114,9 @@ Open Chrome on a PC that is on the **Local Area Network** as the Kria and type t
 
 [Xilinx Wiki/Boards and Kits/Kria SOMs & Starter Kits](https://xilinx-wiki.atlassian.net/wiki/x/AQDSYQ)
 
+[Kria-PYNQ](https://github.com/Xilinx/Kria-PYNQ)
+
+[PYNQ](https://github.com/Xilinx/PYNQ/)
+
 * * *
 * * *
