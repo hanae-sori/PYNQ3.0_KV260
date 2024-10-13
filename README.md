@@ -106,3 +106,13 @@ sudo /usr/local/share/pynq-venv/bin/python3 -m pip install --upgrade jupyter
 Open Chrome on a PC that is on the **Local Area Network** as the Kria and type this in the address bar:`kria:9090`
 
 * Password: **xilinx**
+
+* * *
+## Reference
+
+[Getting Started with Kria KV260 Vision AI Starter Kit (Ubuntu 22.04)](https://www.amd.com/en/products/system-on-modules/kria/k26/kv260-vision-starter-kit/getting-started-ubuntu/getting-started.html)
+
+[Xilinx Wiki/Boards and Kits/Kria SOMs & Starter Kits](https://xilinx-wiki.atlassian.net/wiki/x/AQDSYQ)
+
+* * *
+* * *
