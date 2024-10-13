@@ -129,6 +129,16 @@ Open Chrome on a PC that is on the **Local Area Network** as the Kria and type t
 `/kv260/video/OpenCV Face Detection Webcam.ipynb`
 
 
+
+## OpenCV Face Detection Webcam.ipynb
+`/pynq-dpu/dpu_mnist_classifier.ipynb`
+> ----> 1 raw_data = mnist.test_images()
+> 
+> HTTPError: HTTP Error 403: Forbidden
+
+I am having issues downloading the MNIST dataset due to server problems. Please use the new ipynb project that I have uploaded.
+
+
 * * *
 ## Reference
 
