@@ -107,6 +107,10 @@ Open Chrome on a PC that is on the **Local Area Network** as the Kria and type t
 
 * Password: **xilinx**
 
+## Open Jupyter notebooks
+
+
+
 * * *
 ## Reference
 
