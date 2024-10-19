@@ -85,9 +85,9 @@ sudo xlnx-config.sysinit
 ![ubuntu upgrade](./ubuntu_upgrade.png)
 
 ### --keep the local version currently installed
-
-
 <br><br>
+
+
 ## Install PYNQ
 
 ```
@@ -102,29 +102,26 @@ sudo /usr/local/share/pynq-venv/bin/python3 -m pip install --upgrade pip
 sudo /usr/local/share/pynq-venv/bin/python3 -m pip install torch torchvision pillow opencv-python
 sudo /usr/local/share/pynq-venv/bin/python3 -m pip install --upgrade jupyter
 ```
+<br>
 
-
-<br><br>
 ## Test PYNQ
 ```
 sudo ./selftest.sh #/path-Kria-PYNQ/ sudo ./home/ubuntu/Kria-PYNQ/selftest.sh
 ```
+<br>
 
-
-<br><br>
 ## Open Jupyter notebooks
 
 Open Chrome on a PC that is on the **Local Area Network** as the Kria and type this in the address bar:`kria:9090/lab`
 
 * Password: **xilinx**
+<br>
 
-
-<br><br>
 ## OpenCV Face Detection Webcam.ipynb
 `/kv260/video/OpenCV Face Detection Webcam.ipynb`
 
+<br>
 
-<br><br>
 ## OpenCV Face Detection Webcam.ipynb
 `/pynq-dpu/dpu_mnist_classifier.ipynb`
 > ----> 1 raw_data = mnist.test_images()
