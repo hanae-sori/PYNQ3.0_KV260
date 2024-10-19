@@ -1,7 +1,6 @@
 # pynq_kv260
 ![](./kriapynq.png)
-
-
+<br>
 
 ## Ubuntu Desktop LTS
 
@@ -13,6 +12,7 @@ The Ubuntu Desktop 22.04 is the primary OS targeted by the KV260 pre-built appli
 ["xmutil bootfw_update” on-target utility](https://xilinx-wiki.atlassian.net/wiki/spaces/A/pages/1641152513#Boot-FW-Update-Process)
 
 [Xilinx download - 2022.2_update1_BOOT.BIN](https://www.xilinx.com/member/forms/download/design-license-xef.html?filename=BOOT-k26-starter-kit-20230516185703.bin)   
+<br>
 
 ### Image Boot Utility
 
@@ -22,7 +22,7 @@ The Ubuntu Desktop 22.04 is the primary OS targeted by the KV260 pre-built appli
 >When you need helps format and create bootable USB flash drives.
 
 
-
+<br><br>
 ## System Update
 
 You can view the GUI (Ubuntu Desktop) on a monitor connected through the HDMI port on the FPGA board. However, for better convenience and control, I recommend using a Serial Terminal or connecting to the system via SSH for accessing and interacting with the environment. These methods tend to be more reliable, especially for remote management or troubleshooting purposes.
@@ -87,7 +87,7 @@ sudo xlnx-config.sysinit
 ### --keep the local version currently installed
 
 
-
+<br><br>
 ## Install PYNQ
 
 ```
@@ -104,14 +104,14 @@ sudo /usr/local/share/pynq-venv/bin/python3 -m pip install --upgrade jupyter
 ```
 
 
-
+<br><br>
 ## Test PYNQ
 ```
 sudo ./selftest.sh #/path-Kria-PYNQ/ sudo ./home/ubuntu/Kria-PYNQ/selftest.sh
 ```
 
 
-
+<br><br>
 ## Open Jupyter notebooks
 
 Open Chrome on a PC that is on the **Local Area Network** as the Kria and type this in the address bar:`kria:9090/lab`
@@ -119,12 +119,12 @@ Open Chrome on a PC that is on the **Local Area Network** as the Kria and type t
 * Password: **xilinx**
 
 
-
+<br><br>
 ## OpenCV Face Detection Webcam.ipynb
 `/kv260/video/OpenCV Face Detection Webcam.ipynb`
 
 
-
+<br><br>
 ## OpenCV Face Detection Webcam.ipynb
 `/pynq-dpu/dpu_mnist_classifier.ipynb`
 > ----> 1 raw_data = mnist.test_images()
@@ -134,6 +134,8 @@ Open Chrome on a PC that is on the **Local Area Network** as the Kria and type t
 There are some issues downloading the MNIST dataset due to server problems. Please use the ipynb project that have uploaded.
 
 
+
+<br><br><br>
 * * *
 ## Reference
 
