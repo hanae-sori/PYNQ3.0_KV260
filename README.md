@@ -67,10 +67,15 @@ sudo apt install net-tools
 >service sshd reload
 >```
 
+### ** keep the local version currently installed **
+
 ```
 sudo dpkg-reconfigure -plow unattended-upgrades
 ```
 --`NO`
+
+![ubuntu upgrade](./ubuntu_upgrade.png)
+
 ```
 sudo apt-get install git
 sudo apt update
@@ -81,13 +86,15 @@ sudo xlnx-config.sysinit
 ```
 
 ### ** !Do not upgrade the Ubuntu version! **
+```
+sudo nano /etc/update-manager/release-upgrades
+```
+>```
+>Prompt=never
+>```
 
-![ubuntu upgrade](./ubuntu_upgrade.png)
 
-### --keep the local version currently installed
 <br><br>
-
-
 ## Install PYNQ
 
 ```
