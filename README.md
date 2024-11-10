@@ -74,7 +74,7 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 ```
 --`NO`
 
-![ubuntu upgrade](./ubuntu_upgrade.png)
+![package_upgrade](./package_upgrade.png)
 
 ```
 sudo apt-get install git
