@@ -165,7 +165,43 @@ This script enables developers to build a container for a specific framework. Th
 ```
 cd <Vitis-AI install path>/Vitis-AI/docker
 ./docker_build_gpu.sh
+
+### Setup Container ###
+docker image ls
+docker run --gpus all -p 8888:8888 -v <Host path>:workspace -it <REPOSITORY:TAG> /bin/bash
+
+### Run Container ###
+docker image ls
+docker start <CONTAINER ID> && docker exec -it <CONTAINER ID> /bin/bash
 ```
+
+<br>
+
+### Quantizing the Model PyTorch Version (from pytorch_nndct)
+```
+conda activate vitis-ai-pytorch
+### pip install webcolors==1.10
+jupyter notebook --no-browser --port=8888 --ip=0.0.0.0
+```
+>```
+>inspector.inspect(model, (dummy_input,), device=device, output_dir="inspect", image_format="png")
+>quantizer = torch_quantizer(quant_mode, model, dummy_input)
+>```
+
+<br>
+
+** Verify `.xmodel` with [netron.app](https://netron.app/). **
+
+<br>
+
+## Compile the Model PyTorch Version (vai_c_xir)
+For PyTorch, the quantizer NNDCT outputs the quantized model in the XIR format directly. Use vai_c_xir to compile it.
+
+For pre-built DPU xclbins in Vitis AI releases, you can find the corresponding arch.json file in Vitis AI docker (`/opt/vitis_ai/compiler/arch`). 
+```
+vai_c_xir -x /PATH/TO/quantized.xmodel -a /PATH/TO/arch.json -o /OUTPUTPATH -n netname
+```
+
 
 
 <br><br><br>
