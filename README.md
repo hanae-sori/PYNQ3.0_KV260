@@ -109,12 +109,14 @@ sudo /usr/local/share/pynq-venv/bin/python3 -m pip install --upgrade pip
 sudo /usr/local/share/pynq-venv/bin/python3 -m pip install torch torchvision pillow opencv-python
 sudo /usr/local/share/pynq-venv/bin/python3 -m pip install --upgrade jupyter
 ```
+
 <br>
 
 ## Test PYNQ
 ```
 sudo ./selftest.sh #/path-Kria-PYNQ/ sudo ./home/ubuntu/Kria-PYNQ/selftest.sh
 ```
+
 <br>
 
 ## Open Jupyter notebooks
@@ -122,6 +124,7 @@ sudo ./selftest.sh #/path-Kria-PYNQ/ sudo ./home/ubuntu/Kria-PYNQ/selftest.sh
 Open Chrome on a PC that is on the **Local Area Network** as the Kria and type this in the address bar:`kria:9090/lab`
 
 * Password: **xilinx**
+
 <br>
 
 ## OpenCV Face Detection Webcam.ipynb
@@ -137,6 +140,32 @@ Open Chrome on a PC that is on the **Local Area Network** as the Kria and type t
 
 There are some issues downloading the MNIST dataset due to server problems. Please use the ipynb project that have uploaded.
 
+<br>
+
+## PYNQ-DPU
+
+| PYNQ Release Version | PYNQ-DPU Release Version | Vitis AI Release Version | 
+|----------------------|--------------------------|--------------------------|
+| v3.0                 | v2.5                     | v2.5                     |
+
+<br>
+
+### Install Vitis-AI 2.5
+The first step is to clone and follow the install steps for `Vitis AI 2.5` on the host machine.
+```
+git clone https://github.com/Xilinx/Vitis-AI # for inspector, quatizer, and compiler. when version update, --branch 2.5
+cd Vitis-AI
+```
+[Vitis-AI 2.5 github](https://github.com/Xilinx/Vitis-AI/tree/2.5)
+
+<br>
+
+### Build the Docker Container from Xilinx Recipes
+This script enables developers to build a container for a specific framework. This single unified script supports CPU-only hosts, GPU-capable hosts, and AMD ROCm-capable hosts.
+```
+cd <Vitis-AI install path>/Vitis-AI/docker
+./docker_build_gpu.sh
+```
 
 
 <br><br><br>
@@ -152,6 +181,8 @@ There are some issues downloading the MNIST dataset due to server problems. Plea
 [PYNQ github](https://github.com/Xilinx/PYNQ/)
 
 [PYNQ: Python productivity for Adaptive Computing platforms](https://pynq.readthedocs.io/en/latest/index.html)
+
+[DPU-PYNQ github](https://github.com/Xilinx/DPU-PYNQ)
 
 * * *
 * * *
