@@ -132,7 +132,7 @@ Open Chrome on a PC that is on the **Local Area Network** as the Kria and type t
 
 <br>
 
-## OpenCV Face Detection Webcam.ipynb
+## DPU overlay dpu_mnist_classifier.ipynb
 `/pynq-dpu/dpu_mnist_classifier.ipynb`
 > ----> 1 raw_data = mnist.test_images()
 > 
