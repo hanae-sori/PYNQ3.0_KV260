@@ -185,7 +185,7 @@ jupyter notebook --no-browser --port=8888 --ip=0.0.0.0
 ```
 >```
 >inspector.inspect(model, (dummy_input,), device=device, output_dir="inspect", image_format="png")
->quantizer = torch_quantizer(quant_mode, model, dummy_input)
+>quantizer = torch_quantizer(quant_mode, model, dummy_input, output_dir="quantize_result", bitwidth=8, device=device, target=target)
 >```
 
 <br>
