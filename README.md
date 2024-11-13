@@ -153,7 +153,7 @@ There are some issues downloading the MNIST dataset due to server problems. Plea
 ### Install Vitis-AI 2.5
 The first step is to clone and follow the install steps for `Vitis AI 2.5` on the host machine.
 ```
-git clone https://github.com/Xilinx/Vitis-AI # for inspector, quatizer, and compiler. when version update, --branch 2.5
+git clone https://github.com/Xilinx/Vitis-AI --branch 2.5
 cd Vitis-AI
 ```
 [Vitis-AI 2.5 github](https://github.com/Xilinx/Vitis-AI/tree/2.5)
